@@ -44,14 +44,14 @@ def update_manifest(tag: str, owner_repo: str = "themasfebrianto/clipclop-assets
                 size_bytes = asset_file.stat().st_size
                 asset_data["size_bytes"] = size_bytes
                 asset_data["url"] = f"https://github.com/{owner_repo}/releases/download/{tag}/{filename}"
-                print(f"✔ Processed '{asset_key}' ({filename}): SHA256={sha256[:12]}..., Size={size_bytes} bytes")
+                print(f"[OK] Processed '{asset_key}' ({filename}): SHA256={sha256[:12]}..., Size={size_bytes} bytes")
             else:
-                print(f"⚠ Warning: File '{filename}' for asset '{asset_key}' not found in {ASSETS_DIR}")
+                print(f"[WARNING] File '{filename}' for asset '{asset_key}' not found in {ASSETS_DIR}")
 
     with open(MANIFEST_PATH, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2)
 
-    print(f"\n✅ Updated {MANIFEST_PATH} for release tag {tag}")
+    print(f"\n[SUCCESS] Updated {MANIFEST_PATH} for release tag {tag}")
 
 
 if __name__ == "__main__":
