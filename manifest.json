@@ -1,0 +1,41 @@
+{
+  "version": "1.0.4",
+  "updated_at": "2026-07-03T00:00:00Z",
+  "assets": {
+    "ffmpeg": {
+      "name": "FFmpeg Portable v7.1",
+      "type": "zip",
+      "filename": "ffmpeg-v7.1-win64.zip",
+      "url": "https://github.com/themasfebrianto/clipclop-assets/releases/download/v1.0.4/ffmpeg-v7.1-win64.zip",
+      "sha256": "",
+      "target_dir": "bin/ffmpeg",
+      "binaries": {
+        "ffmpeg": "bin/ffmpeg/ffmpeg.exe",
+        "ffprobe": "bin/ffmpeg/ffprobe.exe"
+      }
+    },
+    "node": {
+      "name": "Node.js Portable v24.5.0",
+      "type": "zip",
+      "filename": "node-v24.5.0-win-x64.zip",
+      "url": "https://github.com/themasfebrianto/clipclop-assets/releases/download/v1.0.4/node-v24.5.0-win-x64.zip",
+      "sha256": "",
+      "target_dir": "bin/node",
+      "binaries": {
+        "node": "bin/node/node.exe",
+        "npm": "bin/node/npm.cmd"
+      }
+    },
+    "ytdlp": {
+      "name": "yt-dlp Standalone Binary",
+      "type": "binary",
+      "filename": "yt-dlp-2026.06.28.exe",
+      "url": "https://github.com/themasfebrianto/clipclop-assets/releases/download/v1.0.4/yt-dlp-2026.06.28.exe",
+      "sha256": "",
+      "target_file": "bin/yt-dlp.exe",
+      "binaries": {
+        "ytdlp": "bin/yt-dlp.exe"
+      }
+    }
+  }
+}
