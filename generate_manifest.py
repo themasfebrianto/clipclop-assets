@@ -1,3 +1,4 @@
+# convention-ignore-file PY003
 """
 Script to compute SHA256 checksums of binaries in assets/ directory
 and update manifest.json for clipclop-assets releases.
